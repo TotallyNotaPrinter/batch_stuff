@@ -1,7 +1,20 @@
 # batch_stuff
- files
+stress-ng in a container for testing things in batch
+I didn't have an ML / BigData image since I have like, 0 skills in that area and I needed to have something that would just -run- in Batch. 
+so I built a small container that is alpine based and just runs `stres-ng`
 
-So, theres a few files here. 
+How To Use:
+  - create a batch CE
+  - create a queue
+  - create your job def (feel free to use the one provided)
+  - deploy the lambda (make sure you have the right perms)
+  - Build the dockerfile and push to ECR 
+  - configure a test event that looks like the one in the repo 
+  - fill out those keys with the data in question
+  - submit 
+
+As an aside, you might want to change the compute defined the job def, I leave that up to y'all 
+
 Lambda needs to be deployed and has to have a role that allow it to submit jobs, at minimum. 
 Since I was lazy, my role gives it full Batch access. 
 
@@ -14,16 +27,4 @@ More detail about the request structure can be found here: https://boto3.amazona
 
 
 for detail on what flags can be used with stress-ng, see here: https://manpages.ubuntu.com/manpages/artful/man1/stress-ng.1.html
-
-How To Use:
-  - create a batch CE
-  - create a queue
-  - create your job def (feel free to use the one provided)
-  - deploy the lambda (make sure you have the right perms)
-  - Build and deploy the dockerfile 
-  - configure a test event that looks like the one in the repo 
-  - fill out those keys with the data in question
-  - submit 
-
-As an aside, you might want to change the compute defined the job def, I leave that up to y'all 
 
