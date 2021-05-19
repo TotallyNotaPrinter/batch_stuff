@@ -14,3 +14,15 @@ More detail about the request structure can be found here: https://boto3.amazona
 
 
 for detail on what flags can be used with stress-ng, see here: https://manpages.ubuntu.com/manpages/artful/man1/stress-ng.1.html
+
+How To Use:
+  - create a batch CE
+  - create a queue
+  - create your job def (feel free to use the one provided)
+  - deploy the lambda (make sure you have the right perms)
+  - configure a test event that looks like the one in the repo 
+  - fill out those keys with the data in question
+  - submit 
+
+As an aside, you might want to change the compute defined the job def, I leave that up to y'all 
+
