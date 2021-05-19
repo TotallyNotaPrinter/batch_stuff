@@ -1,0 +1,9 @@
+{
+	"jobName": "$job-name",
+	"jobQueue": "$job-queue",
+	"jobDefinition": "$job-definition",
+	"containerOverrides": {
+		"resourceRequirements": ["here you can specify resource reqs for VCPU and MEM"], 
+		"command": ["this is where you'd put commands, this maps to docker CMD"]
+	}
+}

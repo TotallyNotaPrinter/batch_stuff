@@ -1,0 +1,14 @@
+jobDefinitionName: 'stress-test-mem'
+type: container
+parameters: {}
+containerProperties:
+  image: 'THIS_IS_WHERE_YOUR_IMAGE_URI_GOES'
+  command: []
+  privileged: true
+  ulimits: []
+  user: root
+  resourceRequirements:
+  - type: VCPU
+    value: '1'
+  - type: MEMORY
+    value: '1024'
