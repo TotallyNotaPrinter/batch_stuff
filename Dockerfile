@@ -1,8 +1,6 @@
-FROM amazonlinux:2
+FROM alpine:latest
 
-RUN yum update -y
-RUN amazon-linux-extras install epel -y 
-RUN yum install stress-ng -y 
+RUN apk update && apk add stress-ng  
 
 ENTRYPOINT ["/usr/bin/stress-ng", "--verbose"]
 CMD []
