@@ -1,6 +1,6 @@
 import boto3
 
-batch = boto3.client('batch')  # establishes a session to the ecs API
+batch = boto3.client('batch')
 
 def start(jn,jq,jd,co):
     job = batch.submit_job(
