@@ -20,6 +20,7 @@ How To Use:
   - create a queue
   - create your job def (feel free to use the one provided)
   - deploy the lambda (make sure you have the right perms)
+  - Build and deploy the dockerfile 
   - configure a test event that looks like the one in the repo 
   - fill out those keys with the data in question
   - submit 
