@@ -8,9 +8,9 @@ So, I built a small container that is alpine based and just runs `stres-ng` and 
 How To Use:
   - create a batch CE
   - create a queue
-  - create your job def (feel free to use the one provided)
+  - create your job def (feel free to use the one provided just needs an image URI)
   - deploy the lambda (make sure you have the right perms)
-  - Build the dockerfile and push to ECR 
+  - Build the dockerfile and push to ECR (this is where you get the URI for the job def)
   - configure a test event that looks like the one in the repo 
   - fill out those keys with the data in question
   - submit 
