@@ -4,6 +4,6 @@
 	"jobDefinition": "$job-definition",
 	"containerOverrides": {
 		"resourceRequirements": ["here you can specify resource reqs for VCPU and MEM"], 
-		"command": ["this is where you'd put commands, this maps to docker CMD"]
+		"command": ["this maps to docker CMD, here we'd put in the flags we want to use with stress-ng"]
 	}
 }
