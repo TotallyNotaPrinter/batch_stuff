@@ -1,5 +1,5 @@
 # batch_stuff
-stress-ng in a container for testing things in batch
+stress-ng in a container for testing things in aws batch
 
 I didn't have an ML / BigData image since I have like, 0 skills in that area and I needed to have something that would just -run- in Batch. 
 
@@ -30,3 +30,4 @@ More detail about the request structure can be found here: https://boto3.amazona
 
 for detail on what flags can be used with stress-ng, see here: https://manpages.ubuntu.com/manpages/artful/man1/stress-ng.1.html
 
+useful for testing different job defintiion parameters, like container overrides, etc. 
