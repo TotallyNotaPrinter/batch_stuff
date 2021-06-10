@@ -28,6 +28,6 @@ The code is small, lambda handler maps some vars, and then submits the job via a
 More detail about the request structure can be found here: https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job
 
 
-for detail on what flags can be used with stress-ng, see here: https://manpages.ubuntu.com/manpages/artful/man1/stress-ng.1.html
+for detail on what flags (args to be passed in via `command` in the job def) can be used with stress-ng, see here: https://manpages.ubuntu.com/manpages/artful/man1/stress-ng.1.html
 
 useful for testing different job defintiion parameters, like container overrides, etc. 
