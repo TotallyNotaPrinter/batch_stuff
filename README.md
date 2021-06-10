@@ -3,7 +3,7 @@ stress-ng in a container for testing things in aws batch
 
 I didn't have an ML / BigData image since I have like, 0 skills in that area and I needed to have something that would just -run- in Batch. 
 
-So, I built a small container that is alpine based and just runs `stres-ng` and you can submit the jobs via Lambda
+So, I built a small container that is alpine based and just runs `stress-ng` and you can submit the jobs via Lambda
 
 How To Use:
   - create a batch CE
